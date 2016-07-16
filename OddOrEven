@@ -1,0 +1,20 @@
+public class ex2 {
+
+    public static void main(String[] args) {
+
+        int a;
+        Scanner scan2 = new Scanner(System.in);
+
+        do {
+            System.out.println("Enter an integer: ");
+            a = scan2.nextInt();
+        }
+        while(a<=0);
+
+        if (a % 2 == 0)
+                System.out.printf("%d is Even\n", a);
+
+        else
+                System.out.printf("%d is ODD\n", a);
+    }
+}
