@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+
+public class carPooling {
+
+    public static void main(String[] args) {
+
+        float miles; //miles travelled in a day
+        float gallonCost; //cost per a gallon
+        float parkFee; //money spent on parking fees
+        float tolls; //money spent on tolls
+        float avgmpg; //average miles per gallon
+        float totalGallonsUsed; //gallons used for a day of driving
+        float totalGallonCost; // total cost of gas
+        float totalCost; //total cost per a day of driving
+
+        Scanner scan1 = new Scanner(System.in);
+
+        System.out.println("Please enter how many miles you're driving per day:");
+        miles = scan1.nextFloat();
+
+        System.out.println("Please enter the cost per gallon of gasoline:");
+        gallonCost = scan1.nextFloat();
+
+        System.out.println("Please enter the average miles per gallon:");
+        avgmpg = scan1.nextFloat();
+
+        System.out.println("Please enter the parking fees per day:");
+        parkFee = scan1.nextFloat();
+
+        System.out.println("Please enter the Tolls per day:");
+        tolls = scan1.nextFloat();
+
+        totalGallonsUsed = miles / avgmpg;
+        totalGallonCost = totalGallonsUsed * gallonCost;
+        totalCost = totalGallonCost + tolls + parkFee;
+
+        System.out.printf("At a %.1f average miles per gallon it costs you $%.2f to drive a day with your car\n", avgmpg, totalCost);
+
+
+
+
+
+
+
+    }
+}
