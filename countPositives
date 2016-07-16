@@ -1,0 +1,81 @@
+public class negativeInput {
+
+    public static void main(String[] args) {
+        int a, b, c, d, e;
+        int countzero = 0;
+        int countnegative = 0;
+        int countpoz = 0;
+
+        System.out.println("Enter the first number: ");
+        Scanner scan1 = new Scanner(System.in);
+
+        a = scan1.nextInt();
+
+        System.out.println("Enter the first number: ");
+
+
+        b = scan1.nextInt();
+
+        System.out.println("Enter the first number: ");
+        
+
+        c = scan1.nextInt();
+
+        System.out.println("Enter the first number: ");
+
+
+        d = scan1.nextInt();
+
+        System.out.println("Enter the first number: ");
+
+
+        e = scan1.nextInt();
+
+
+        if (a == 0)
+
+            countzero++;
+        else if (a < 0)
+            countnegative++;
+        else
+            countpoz++;
+
+        if (b == 0)
+
+            countzero++;
+        else if (b < 0)
+            countnegative++;
+        else
+            countpoz++;
+
+
+        if (c == 0)
+
+            countzero++;
+        else if (c < 0)
+            countnegative++;
+        else
+            countpoz++;
+
+        if (d == 0)
+
+            countzero++;
+        else if (d < 0)
+            countnegative++;
+        else
+            countpoz++;
+
+        if (e == 0)
+
+            countzero++;
+        else if (e < 0)
+            countnegative++;
+        else
+            countpoz++;
+
+        System.out.printf("Positive numbers are %d\n", countpoz);
+        System.out.printf("Negative numbers are %d\n", countnegative);
+        System.out.printf("The number of zeros is: %d\n", countzero);
+
+    }
+}
