@@ -1,0 +1,16 @@
+public class worldPopulation {
+
+    public static void main(String[] args) {
+
+        double worldPopulation = 7.436; // billion
+        double growthRate = 1.1;
+
+        System.out.println("The world population is 7.436(billion) in 2016\n");
+
+        for(int i=2017;i<=2022;i++)
+        {
+            worldPopulation = worldPopulation * 1.1;
+            System.out.printf("The world population in %d is %f\n", i, worldPopulation);
+        }
+    }
+}
