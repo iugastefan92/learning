@@ -1,0 +1,24 @@
+public class multiples {
+
+    public static void main(String[] args) {
+
+        int a, b;
+
+        do {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Enter the first integer: ");
+            a = scan.nextInt();
+
+            System.out.println("Enter the second integer, smaller than the first one: ");
+            b = scan.nextInt();
+        }
+        while(a < b);
+
+
+
+            if(a % b == 0)
+                System.out.printf("%d is a multiple of %d\n", a, b);
+            else
+                System.out.printf("%d is not a multiple of %d\n", a, b);
+    }
+}
